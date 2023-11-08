@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ayo Nonton Bioskop</h1>
+    <label for="Remaja">Apa Umurmu</label>
+    <input type="text" id="remaja">
+    <button type="button"  id="btn">Inputkan</button>
+    <p id="data">Note : pilih remaja atau balita</p>
+    <script>
+        var button = document.getElementById("btn");
+        button.addEventListener("click", () => {
+            var remaja = document.getElementById("remaja");
+            if(remaja.value == "remaja"){
+                console.log(remaja.value)
+                document.write("<h4>Boleh menonton bioskop</h4>");
+            }else {
+                document.write("<h4>Balita Tidak Boleh Masuk</h4>");
+
+                document.getElementById("data").innerHTML = data;
+            }  
+        })
+
+    </script>
+</body>
+</html>
